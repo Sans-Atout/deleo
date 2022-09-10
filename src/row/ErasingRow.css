@@ -1,0 +1,16 @@
+.method-colum > span{
+    display: none;
+}
+
+td.method-colum{
+    cursor: pointer;
+}
+
+.method-colum:hover > span{
+    display: flex;
+    position: absolute;
+    padding: 0.3125rem;
+    transform: translateX(75%) translateY(-100%);
+    background-color: var(--main-header);
+    z-index: 3;
+}

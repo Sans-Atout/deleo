@@ -1,0 +1,75 @@
+img.tab-icons {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 2rem;
+    margin-bottom: 1rem;
+}
+
+div.tab-label-zone {
+    display: flex;
+    flex-direction: column;
+    height: 9rem;
+    border-bottom-style: solid;
+    border-bottom-width: 0.125rem;
+    border-bottom-color: var(--header-background);
+    text-align: center;
+    color: var(--color);
+    padding-top: auto;
+    padding-bottom: auto;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+div.label {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.div-container {
+    flex: 1;
+    margin: 3.125rem;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.erase-table {
+    width: 100%;
+    flex: 1 1;
+}
+
+tr {
+    width: 100%;
+    display: flex;
+}
+
+td,th {
+    margin : 0.15625rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    border-radius: 0.3125rem;
+    flex: 1;
+}
+
+.first-column{
+    flex: 6;
+}
+
+.method-colum{
+    flex: 2;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow: hidden; 
+}
+
+th{
+    background-color: var(--main-header);
+    color: var(--color);
+}
+
+td{
+    background-color: var(--header-background);
+    color: var(--color);
+}
