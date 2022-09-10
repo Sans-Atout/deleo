@@ -7,7 +7,7 @@
     "distDir": "../build"
   },
   "package": {
-    "productName": "secure-erase-app",
+    "productName": "Deleo",
     "version": "0.1.0"
   },
   "tauri": {
