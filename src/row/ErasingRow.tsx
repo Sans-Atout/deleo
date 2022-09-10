@@ -19,45 +19,28 @@ enum Status {
     Pause = "Pause"
 }
 
-class EraseTask {
-
-    taskName: string;
-    paths: Array<string>;
-    method: ErasingMethod;
-    status: Status;
-
-    constructor(name: string, toErase: Array<string>, eraseMethod: ErasingMethod) {
-        this.taskName = name;
-        this.paths = toErase;
-        this.method = eraseMethod;
-        this.status = Status.ToDo;
-    }
-
-    getDisplayName() {
-        if (this.taskName.length === 0) {
-            return (this.paths.length === 1) ? this.paths.at(0) : "Deleo Task";
-        }
-        return this.taskName;
-    }
-}
-
-
-//<span>{this.props.erase.method}</span>
-class ErasingRow extends React.Component<{ key: string, erase: EraseTask }>{
+class EraseTask extends React.Component<{ key: string, name: string, paths: Array<string>, method: ErasingMethod, status: Status}>{
 
 
     render(): React.ReactNode {
         return <tr>
             <React.Fragment key={this.props.key}>
 
-                <td className='first-column'>{this.props.erase.getDisplayName()}</td>
-                <td >{this.props.erase.status}</td>
-                <td className='method-colum' onClick={() => { console.log(this) }} >{this.props.erase.method}</td>
+                <td className='first-column'>{this.getDisplayName()}</td>
+                <td >{this.props.status}</td>
+                <td className='method-colum' onClick={() => { console.log(this) }} >{this.props.method}</td>
                 <td ></td>
             </React.Fragment>
         </tr>
     }
 
+    getDisplayName() {
+        if (this.props.name.length === 0) {
+            return (this.props.paths.length === 1) ? this.props.paths.at(0) : "Deleo Task";
+        }
+        return this.props.name;
+    }
 }
 
-export { ErasingRow, ErasingMethod, EraseTask };
+
+export { Status, ErasingMethod, EraseTask };

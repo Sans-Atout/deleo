@@ -2,6 +2,9 @@ import React from 'react';
 import './main-component/base.css';
 import Header from './header/Header';
 import { EraseContent, SettingContent, TabLabel, WikiContent } from './tabs/Tabs'; 
+import {EraseTask, ErasingMethod, Status, } from './row/ErasingRow';
+import uuid from 'react-uuid';
+
 import './App.css';
 
 //Icons 
@@ -24,6 +27,7 @@ class App extends React.Component {
             </div>
             <div className='main-info'>
               <EraseContent isVisible={true}>
+                <EraseTask key={uuid()} name='My First Erasing Task' method={ErasingMethod.RCMP} status={Status.ToDo} paths={["trash:///container"]}/>
   
               </EraseContent>
               <SettingContent isVisible={false}>

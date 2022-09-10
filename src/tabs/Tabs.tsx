@@ -1,8 +1,5 @@
 import React, { ReactNode } from 'react';
 import './Tabs.css';
-import { EraseTask, ErasingMethod, ErasingRow } from '../row/ErasingRow';
-import uuid from 'react-uuid';
-
 
 class TabLabel extends React.Component<{ icons: string, label: string }>{
 
@@ -15,20 +12,6 @@ class TabLabel extends React.Component<{ icons: string, label: string }>{
 
         </div>
     }
-}
-
-
-
-class Tab {
-
-    menu: TabLabel;
-    content: EraseContent | SettingContent | WikiContent;
-
-    constructor(icon: string, menu_label: string, content: EraseContent | SettingContent | WikiContent) {
-        this.menu = new TabLabel({ icons: icon, label: menu_label });
-        this.content = content;
-    }
-
 }
 
 class EraseContent extends React.Component<{ isVisible: boolean, children: React.ReactNode}>{
