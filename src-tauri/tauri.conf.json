@@ -12,6 +12,18 @@
   },
   "tauri": {
     "allowlist": {
+      "fs": {
+        "all": false,
+        "copyFile": false,
+        "createDir": false,
+        "readDir": false,
+        "readFile": false,
+        "removeDir": true,
+        "removeFile": true,
+        "renameFile": true,
+        "scope":  ["**"],
+        "writeFile": false
+      },
       "all": true
     },
     "bundle": {
@@ -56,10 +68,10 @@
     "windows": [
       {
         "fullscreen": false,
-        "height": 600,
+        "height": 921,
         "resizable": true,
         "title": "Secure Erase App",
-        "width": 800
+        "width": 1296
       }
     ]
   }
