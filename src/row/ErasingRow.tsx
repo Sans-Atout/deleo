@@ -19,12 +19,12 @@ enum Status {
     Pause = "Pause"
 }
 
-class EraseTask extends React.Component<{ key: string, name: string, paths: Array<string>, method: ErasingMethod, status: Status}>{
+class EraseTask extends React.Component<{ tabKey: string, name: string, paths: Array<string>, method: ErasingMethod, status: Status}>{
 
 
     render(): React.ReactNode {
         return <tr>
-            <React.Fragment key={this.props.key}>
+            <React.Fragment key={this.props.tabKey}>
 
                 <td className='first-column'>{this.getDisplayName()}</td>
                 <td >{this.props.status}</td>

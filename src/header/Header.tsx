@@ -1,9 +1,8 @@
 import React from 'react';
 import './Header.css';
-import {AddTrashBtn, AddFolderBtn, AddFileBtn} from '../btn/Button';
 import logo from './../images/logo.svg';
 
-class Header extends React.Component<{hasButon:boolean}>{
+class Header extends React.Component<{hasButon:boolean, children: React.ReactNode}>{
 
 
 
@@ -17,10 +16,8 @@ class Header extends React.Component<{hasButon:boolean}>{
                 </div>
             </div>
             <div className='btn-zone'>
-                <AddFolderBtn/>
-                <AddFileBtn/>
-                <AddTrashBtn/>
 
+                {this.props.children}
             </div>
         </header>
     }
