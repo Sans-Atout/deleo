@@ -14,6 +14,7 @@ import settings from './images/settings.svg';
 import book from './images/book.svg';
 import trash from './images/trash.svg';
 import { fs } from '@tauri-apps/api';
+import ModalForm from './modale/form-modal';
 
 class App extends React.Component<{}, { app_path: string, configuration: {}, eraseTask: ReactNode[] }> {
 
@@ -21,7 +22,7 @@ class App extends React.Component<{}, { app_path: string, configuration: {}, era
     super({});
     this.addnewEraseTask = this.addnewEraseTask.bind(this);
 
-    var reactNode : ReactNode[] = [];
+    var reactNode: ReactNode[] = [];
     this.state = {
       app_path: "",
       configuration: {},
@@ -69,10 +70,10 @@ class App extends React.Component<{}, { app_path: string, configuration: {}, era
 
   }
 
-  addnewEraseTask(newEraseTask: ReactNode){
-    var tmpEraseTask  = this.state.eraseTask;
+  addnewEraseTask(newEraseTask: ReactNode) {
+    var tmpEraseTask = this.state.eraseTask;
     tmpEraseTask.push(newEraseTask);
-    this.setState({eraseTask : tmpEraseTask});
+    this.setState({ eraseTask: tmpEraseTask });
   }
 
   render(): React.ReactNode {
@@ -91,7 +92,7 @@ class App extends React.Component<{}, { app_path: string, configuration: {}, era
         </div>
         <div className='main-info'>
           <EraseContent isVisible={true}>
-          {this.state.eraseTask}
+            {this.state.eraseTask}
           </EraseContent>
           <SettingContent isVisible={false}>
 
@@ -100,9 +101,16 @@ class App extends React.Component<{}, { app_path: string, configuration: {}, era
 
         </div>
       </div>
+      <div id='modale-zone'>
+        <ModalForm isVisible={true} isFolder={true} />
+      </div>
     </div>;
 
   }
 }
 
 export default App;
+
+/**
+ *  <ModalForm isVisible={true} isFolder={true} />
+ */

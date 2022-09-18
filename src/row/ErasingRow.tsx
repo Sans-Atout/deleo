@@ -2,7 +2,7 @@ import React from 'react';
 import './ErasingRow.css';
 
 enum ErasingMethod {
-    PS = "Random",
+    PS = "Pseudo Random",
     Gutmann = "Gutmann",
     HMGIS5 = "HMGI S5",
     DODMECE = "DOD 522022 MECE",

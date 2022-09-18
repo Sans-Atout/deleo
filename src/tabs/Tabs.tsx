@@ -18,7 +18,7 @@ class EraseContent extends React.Component<{ isVisible: boolean, children: React
 
 
 
-    render(): React.ReactNode {
+    render(): ReactNode {
 
         if (this.props.isVisible) {
             return <div className='div-container'>
