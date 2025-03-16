@@ -1,0 +1,83 @@
+:root {
+	--background-color: #13121C;
+	--header-background-color: #271742;
+	--text-color: #E1D5F4;
+	--info-color: #AECFEA;
+	--warning-color: #EDE580;
+	--validate-color: #72EB99;
+	--error-color: #F9BEBE;
+	--font: Jaldi;
+	--font-size: 16px;
+}
+
+html {
+	font-family: var(--font), serif;
+	font-size: 1rem;
+	background-color: var(--background-color);
+	color: var(--text-color);
+}
+
+body {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	background-color: var(--header-background-color);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+header > nav {
+	display : flex;
+}
+
+nav > a:first-child{
+	margin-right: 0.5rem;
+	margin-left: 1rem;
+}
+
+nav > a:last-child{
+	margin-right: 1rem;
+	margin-left: 0.5rem;
+}
+
+header a {
+	font-size: 2rem;
+	background-color: var(--background-color);
+	color: var(--text-color);
+	padding: 0.75rem 1.5rem;
+	margin: 0.5rem 0.5rem;
+	border-radius: var(--font-size);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a.changelog {
+	display: flex;
+	align-items: baseline;
+}
+
+a.changelog > div.version {
+	font-size: 1rem;
+	font-weight: normal;
+	margin-left: 0.75rem;
+}
+
+.add_erasing_tasks{
+	font-family: "Jilda", system-ui;
+	font-size: 2rem;
+	color: var(--text-color);
+	font-weight: bold;
+	padding: 0.5rem;
+	text-align: center;
+	border: dashed 0.4rem var(--text-color);
+	border-radius: 1rem;
+	margin : 1.61803rem;
+}
+
+.add_erasing_tasks:hover{
+	cursor: pointer;
+}
