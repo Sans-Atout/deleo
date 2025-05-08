@@ -75,9 +75,99 @@ a.changelog > div.version {
 	text-align: center;
 	border: dashed 0.4rem var(--text-color);
 	border-radius: 1rem;
-	margin : 1.61803rem;
 }
 
 .add_erasing_tasks:hover{
 	cursor: pointer;
+}
+
+.container{
+	margin : 1.61803rem;
+}
+
+div.erasing_tasks{
+	font-size: 1.5rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	padding: 1rem;
+	border-radius: 1rem;
+	background-color: var(--header-background-color) ;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+div.action{
+	margin: 0 1.5rem;
+}
+
+div.action img{
+	width: 1rem;
+	padding-left: 0.4rem;
+	padding-right: 0.4rem;
+	margin-left: 0.1rem;
+	margin-right: 0.1rem;
+	cursor : pointer;
+}
+
+.open_btn{
+	right: 0;
+}
+
+.open_btn img {
+	height: 1rem;
+	cursor : pointer;
+	padding-left: 0.4rem;
+	padding-right: 0.4rem;
+	margin-left: 0.1rem;
+	margin-right: 0.1rem;
+	-webkit-transition: transform 1s ease-in-out;
+	-moz-transition: transform 1s ease-in-out;
+	-o-transition: transform 1s ease-in-out;
+	transition: transform 1s ease-in-out;
+}
+
+.open_state{
+	rotate: 0deg;
+}
+
+.close_state{	rotate: 180deg;
+}
+
+.percentage{
+	flex-grow: 2;
+	height: 2rem;
+	min-width: 3rem;
+	border-radius: 2rem;
+	background-color: var(--background-color);
+	margin : 0 1rem;
+}
+
+.percentage_fill{
+	height: 100%;
+	min-width: 0.5rem;
+	border-radius: 2rem;
+}
+
+.in_progress{
+	background-color: var(--validate-color);
+}
+
+.in_pause{
+	background-color: var(--info-color);
+}
+
+.in_error{
+	background-color: var(--error-color);
+}
+
+.erase_method{
+	padding: 0.5rem 0.75rem;
+	border :  solid 0.1rem var(--text-color);
+	font-size: 1rem;
+	border-radius: 0.5rem;
+}
+
+.percentage_number{
+	margin: 0 1rem;
 }
