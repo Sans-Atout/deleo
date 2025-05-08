@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="99.219643mm"
+   height="99.0439mm"
+   viewBox="0 0 99.219643 99.0439"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="btn_pause.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.5055415"
+     inkscape:cx="243.434"
+     inkscape:cy="193.61804"
+     inkscape:window-width="1900"
+     inkscape:window-height="1028"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-0.37755099,-0.53965676)">
+    <rect
+       width="33.073189"
+       height="99.0439"
+       rx="13.229277"
+       fill="#13121c"
+       id="rect1"
+       x="0.37755099"
+       y="0.53965676"
+       style="stroke-width:6.60877;fill:#ffffff" />
+    <rect
+       x="66.524002"
+       width="33.073189"
+       height="99.0439"
+       rx="13.229277"
+       fill="#13121c"
+       id="rect2"
+       y="0.53965676"
+       style="stroke-width:6.60877;fill:#ffffff" />
+  </g>
+</svg>

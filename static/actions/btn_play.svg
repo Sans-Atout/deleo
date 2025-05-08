@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="98.97506mm"
+   height="99.021561mm"
+   viewBox="0 0 98.97506 99.021561"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="btn_play.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="3.011083"
+     inkscape:cx="368.80418"
+     inkscape:cy="287.4381"
+     inkscape:window-width="1242"
+     inkscape:window-height="1028"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-0.67869822,-0.91786206)">
+    <path
+       d="m 92.040465,62.3405 c 10.151055,-5.294175 10.151055,-18.529575 0,-23.82375 L 23.519137,2.7811747 C 13.367855,-2.5130347 0.67869822,4.1047109 0.67869822,14.693038 v 71.471518 c 0,10.588312 12.68915678,17.205614 22.84043878,11.911589 z"
+       fill="#13121c"
+       id="path1"
+       style="stroke-width:7.23603;fill:#ffffff" />
+  </g>
+</svg>
